@@ -10,7 +10,7 @@
     "start": "quasar dev",
     "fix": "eslint src --fix",
     "build": "quasar build",
-    "postinstall": "./cert-generator.sh"
+    "local-certs": "./cert-generator.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
