@@ -8,6 +8,11 @@
     <q-card flat class="bg-white q-pa-md">
       <div class="row q-col-gutter-md">
         <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.name" :label="$t('common.name')" :disable="!$store.getters.currentUserIsAdmin"/>
+        <Input class="col-12 col-md-4" :rules="[notEmpty]" v-model="article.sellerCode" :label="$t('articles.sellerCode')" />
+        <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleCode" :label="$t('articles.articleCode')" />
+        <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleColorCode" :label="$t('articles.articleColorCode')" />
+        <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleMeasureCode" :label="$t('articles.articleMeasureCode')" />
+        <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleColloCode" :label="$t('articles.articleColloCode')" />
         <Select
           class="col-12 col-md-4"
           ref="articleType"

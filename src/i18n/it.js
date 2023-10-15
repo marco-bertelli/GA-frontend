@@ -28,7 +28,7 @@ export default {
     resetPassword: 'Reimposta password',
     telephone: 'Telefono',
     createdAt: 'Data di creazione',
-    pdf: 'Stampa ricevuta',
+    pdf: 'Stampa Ordine',
     total: 'Totale',
     selectFilterHint: 'Digita per cercare un cliente',
     deleteName: 'Elimina { name }',
@@ -80,6 +80,11 @@ export default {
   articles: {
     entity: 'Articolo',
     entityPlural: 'Articoli',
+    sellerCode: 'Codice venditore',
+    articleCode: 'Codice articolo',
+    articleColorCode: 'Codice colore articolo',
+    articleMeasureCode: 'Codice misura articolo',
+    articleColloCode: 'Codice collo articolo',
     list: 'Lista articoli',
     createdSuccess: 'Articolo creato con successo',
     updatedSuccess: 'Articolo modificato con successo',
@@ -94,20 +99,20 @@ export default {
     updatedSuccess: 'Cliente modificato con successo'
   },
   receipts: {
-    title: 'Ricevuta #{code}',
-    entity: 'Ricevuta',
-    entityPlural: 'Ricevute',
-    list: 'Lista Ricevute',
-    createdSuccess: 'Ricevuta creato con successo',
-    updatedSuccess: 'Ricevuta modificato con successo'
+    title: 'Ordine #{code}',
+    entity: 'Ordine',
+    entityPlural: 'Ordini',
+    list: 'Lista Ordini',
+    createdSuccess: 'Ordine creato con successo',
+    updatedSuccess: 'Ordine modificato con successo'
   },
   recepits: {
-    title: 'Ricevuta #{code}',
-    entity: 'Ricevuta',
-    entityPlural: 'Ricevute',
-    list: 'Lista Ricevute',
-    createdSuccess: 'Ricevuta creato con successo',
-    updatedSuccess: 'Ricevuta modificato con successo'
+    title: 'Ordine #{code}',
+    entity: 'Ordine',
+    entityPlural: 'Ordini',
+    list: 'Lista Ordini',
+    createdSuccess: 'Ordine creato con successo',
+    updatedSuccess: 'Ordine modificato con successo'
   },
   recepit_groups: {
     new: 'Nuova posizione',
