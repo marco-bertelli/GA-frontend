@@ -1,8 +1,8 @@
 {
-  "name": "patronato",
+  "name": "ga_produzioni",
   "version": "1.0.0",
-  "description": "Patronato",
-  "productName": "Patronato",
+  "description": "GA Produzioni",
+  "productName": "GA Produzioni",
   "author": "Davide Carizzoni",
   "private": true,
   "scripts": {
