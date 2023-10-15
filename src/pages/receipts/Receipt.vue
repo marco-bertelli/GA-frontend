@@ -27,6 +27,8 @@
           @filter="filterFn"
         />
         <Input class="col-12 col-md-4" :label="$t('common.creator')"  :modelValue="getNameSurname(receipt?.creator || {})" disable />
+        <Input class="col-12 col-md-4" :label="$t('common.ddtCode')"  :modelValue="receipt?.ddtCode || ''" disable />
+
         <InputCurrency class="col-12 col-md-4" :label="$t('common.total')" :modelValue="receipt.total" disable/>
         <Input class="col-12 disable-resize" v-model="receipt.notes" :label="$t('common.notes')"/>
       </div>
