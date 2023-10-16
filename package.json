@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "GA Produzioni",
   "productName": "GA Produzioni",
-  "author": "Davide Carizzoni",
+  "author": "Davide Carizzoni & Marco Bertelli (frontend enthusiastic)",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

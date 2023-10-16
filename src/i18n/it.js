@@ -30,6 +30,7 @@ export default {
     telephone: 'Telefono',
     createdAt: 'Data di creazione',
     pdf: 'Stampa Ordine',
+    deliveryFile: 'Stampa File Spedizione',
     total: 'Totale',
     selectFilterHint: 'Digita per cercare un cliente',
     deleteName: 'Elimina { name }',

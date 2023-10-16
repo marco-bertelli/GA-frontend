@@ -8,6 +8,7 @@
         <div class="row items-center">
           <q-btn :label="$t('common.update')" color="accent" class="text-bold q-mx-xs" @click="onSave" :loading="loading"/>
           <q-btn :label="$t('common.pdf')" color="dark" class="text-bold q-mx-xs" @click="createPdf" :loading="loadingPdf"/>
+          <q-btn :label="$t('common.deliveryFile')" color="dark" class="text-bold q-mx-xs" @click="createDeliveryFile" :loading="loadingDeliveryFile"/>
         </div>
       </template>
     </PageHeader>
@@ -68,6 +69,7 @@ export default {
       },
       loading: false,
       loadingPdf: false,
+      loadingDeliveryFile: false,
       filterClientValue: ''
     }
   },
@@ -115,6 +117,22 @@ export default {
         this.loadingPdf = false
       } catch (e) {
         this.loadingPdf = false
+        console.error({ e })
+      }
+    },
+    async createDeliveryFile () {
+      const { id } = this.$route.params
+
+      try {
+        this.loadingDeliveryFile = true
+        const { data } = await this.$axios.post(`${this.entity}/${id}/delivery/file`)
+        this.receipt = { ...data }
+
+        window.open(data?.deliveryFileUrl, '_blank')
+
+        this.loadingDeliveryFile = false
+      } catch (e) {
+        this.loadingDeliveryFile = false
         console.error({ e })
       }
     },
