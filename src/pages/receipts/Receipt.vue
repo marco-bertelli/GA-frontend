@@ -7,7 +7,6 @@
       <template #actions>
         <div class="row items-center">
           <q-btn :label="$t('common.update')" color="accent" class="text-bold q-mx-xs" @click="onSave" :loading="loading"/>
-          <q-btn :label="$t('common.pdf')" color="dark" class="text-bold q-mx-xs" @click="createPdf" :loading="loadingPdf"/>
           <q-btn :label="$t('common.deliveryFile')" color="dark" class="text-bold q-mx-xs" @click="createDeliveryFile" :loading="loadingDeliveryFile"/>
         </div>
       </template>

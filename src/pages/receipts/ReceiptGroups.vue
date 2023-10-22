@@ -7,6 +7,7 @@
       </div>
     </template>
     <template #actions="{row}">
+      <q-btn icon="fas fa-file-pdf" round flat @click="() => generateDeliveryPdf(row)" size="sm"/>
       <q-btn icon="fas fa-trash" color="red" round flat @click="() => onClickDelete(row)" size="sm"/>
       <q-btn icon="fas fa-arrow-right" round flat @click="() => goToDetail(row)" size="sm"/>
     </template>
@@ -82,6 +83,17 @@ export default {
   methods: {
     goBack () {
       this.$router.back()
+    },
+    async generateDeliveryPdf (row) {
+      if (!row) return
+
+      try {
+        const { data } = await this.$axios.post(`${this.entity}/${row._id}/pdf`)
+
+        window.open(data?.pdfUrl, '_blank')
+      } catch (e) {
+        console.error({ e })
+      }
     },
     onClickCreate () {
       this.$router.push({ name: 'receiptGroups', params: { receiptGroupId: 'new' } })
