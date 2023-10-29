@@ -12,7 +12,6 @@
         <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleCode" :label="$t('articles.articleCode')" />
         <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleColorCode" :label="$t('articles.articleColorCode')" />
         <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleMeasureCode" :label="$t('articles.articleMeasureCode')" />
-        <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleColloCode" :label="$t('articles.articleColloCode')" />
         <Input class="col-12 col-md-4" ref="name" :rules="[notEmpty]" v-model="article.articleDeliveryCode" :label="$t('articles.articleDeliveryCode')" />
         <Select
           class="col-12 col-md-4"
